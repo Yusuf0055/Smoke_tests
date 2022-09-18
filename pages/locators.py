@@ -11,3 +11,8 @@ class AutorizationOrRegLocators():
     mail_or_phone = (By.CSS_SELECTOR,  "[type=\"text\"].text-input__input")  #Ввод почты или телефона для входа с паролем
     password = (By.CSS_SELECTOR,  "[type=\"password\"].text-input__input")  #Ввод пароля для входа
     login = (By.CSS_SELECTOR,  "button.button_icon-left.button_red.button_h-39.button.button_fluid")  #Кнопка войти
+
+
+class BasketLocators():
+    main_basket_link = (By.CSS_SELECTOR, "[href=\"/cart/\"].user-panel__el")
+    add_to_basket = (By.CSS_SELECTOR, ".product-page__sidebar-content .add-to-cart__btn.mb-9.button_icon-left.button_red")

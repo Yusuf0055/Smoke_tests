@@ -16,3 +16,12 @@ class BasePage():
         except (NoSuchElementException):
             return False
         return True
+
+    def clicked(self, how, what):
+        try:
+            element = self.browser.find_element(how, what)
+            element.click()
+        except (NoSuchElementException):
+            return False
+        return True
+
